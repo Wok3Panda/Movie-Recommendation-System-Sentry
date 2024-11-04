@@ -1,0 +1,7 @@
+Flask
+sentry-sdk
+python-dotenv
+numpy
+pandas
+scikit-learn
+tqdm

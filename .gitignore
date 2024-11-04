@@ -23,7 +23,6 @@ sentry_dsn.txt
 
 # Logs
 *.log
-*.txt
 
 # System files
 .DS_Store
