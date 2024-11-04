@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables
+.env
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Sentry DSN file
+sentry_dsn.txt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Model files and data
+*.pkl
+
+# Logs
+*.log
+*.txt
+
+# System files
+.DS_Store
+Thumbs.db
