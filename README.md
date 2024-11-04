@@ -4,13 +4,13 @@
 This project is a movie recommendation system that uses a collaborative filtering model to provide movie recommendations. The system integrates Sentry for error tracking and performance monitoring to improve reliability in production environments.
 
 ## Project Structure
-
+```bash
 ├── server_flask.py     # Flask server with Sentry integration
 ├── SimpleCFModel.py    # Collaborative filtering model code
 ├── simulate_request.py # Script to simulate user requests and trigger errors
 ├── small_test_set.csv  # Sample test dataset
 ├── small_train_set.csv # Sample training dataset
-
+```
 
 ## Project Files
 
