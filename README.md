@@ -6,9 +6,9 @@ This project is a movie recommendation system that uses a collaborative filterin
 ## Project Structure
 ```bash
 ├── server_flask.py     # Flask server with Sentry integration
-├── SimpleCFModel.py    # Collaborative filtering model code
-├── simulate_request.py # Script to simulate user requests and trigger errors
-├── small_test_set.csv  # Sample test dataset
+├── SimpleCFModel.py    # Collaborative filtering model code 
+├── simulate_request.py # Script to simulate user requests and trigger errors 
+├── small_test_set.csv  # Sample test dataset 
 ├── small_train_set.csv # Sample training dataset
 ```
 
@@ -68,12 +68,30 @@ These CSV files contain sample data for training and testing. Each file includes
    SENTRY_DSN=<Your_Sentry_DSN>
    ```
 
-4. Run the Flask server:
+### Running the Model
+
+4. Train and Save the Model
+   To create the recommendation model file (`simple_cf_model.pkl`), run `SimpleCFModel.py` to train and save the model:
+   ```bash
+   python SimpleCFModel.py
+   ```
+
+   This script will:
+   - Load `small_train_set.csv` as training data.
+   - Train the collaborative filtering model.
+   - Save the trained model as `simple_cf_model.pkl`.
+
+5. Start the Flask Server
+   With the model file generated, you can now start the Flask server:
    ```bash
    python server_flask.py
    ```
 
-5. Use simulate_request.py to test the system:
+   The server will load `simple_cf_model.pkl` and serve recommendations.
+
+### Simulate Requests
+
+6. Use `simulate_request.py` to test the system:
    ```bash
    python simulate_request.py
    ```
