@@ -96,6 +96,6 @@ These CSV files contain sample data for training and testing. Each file includes
    python simulate_request.py
    ```
 
-### Monitoring and Troubleshooting
+## Monitoring and Troubleshooting
 - Sentry Dashboard: You can monitor errors and performance metrics on Sentry’s dashboard. Real-time alerts, breadcrumbs, and contextual information aid in troubleshooting issues.
 - Simulated Errors: The /debug-sentry route and simulation script intentionally trigger errors for testing Sentry's capabilities.
